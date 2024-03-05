@@ -1,4 +1,4 @@
-# Logout dialog in fltk
+# wmlogout
 
 desktop session logout dialog made in c++ and fltk with colors matching adwaita dark theme
 
