@@ -34,6 +34,7 @@ class Fl_HoverButton: public Fl_Button {
 
 void action_poweroff(Fl_Widget *, void * ) {
     system("wmpoweroff&");
+    exit(0);
 }
 
 void action_logout(Fl_Widget *, void * ) {
@@ -42,14 +43,17 @@ void action_logout(Fl_Widget *, void * ) {
     system("killall labwc&");
     system("killall sway&");
     system("killall weston&");
+    exit(0);
 }
 
 void action_suspend(Fl_Widget *, void * ) {
     system("pm-suspend&");
+    exit(0);
 }
 
 void action_reboot(Fl_Widget *, void * ) {
     system("wmreboot&");
+    exit(0);
 }
 
 void action_quit(Fl_Widget *, void * ) {
