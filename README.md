@@ -12,5 +12,5 @@ Install wmlogout with:
 
 ```bash
   apt install libfltk1.3-dev -y
-  g++ `fltk-config --cxxflags` wmlogout.cxx `fltk-config --ldflags` -o wmlogout; ./wmlogout
+  make; ./wmlogout
 ```
