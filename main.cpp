@@ -9,6 +9,7 @@
 #include <FL/Fl_Group.H>
 #include <FL/Fl_Button.H>
 #include <cstdlib>
+#include <iostream>
 Fl_Color bcolor = 0x2d2d2d00;
 Fl_Color fcolor = 0x15539e00;
 
