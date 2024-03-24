@@ -34,26 +34,51 @@ class Fl_HoverButton: public Fl_Button {
 };
 
 void action_poweroff(Fl_Widget *, void * ) {
-    system("wmpoweroff&");
+    int result = std::system("wmpoweroff&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "wmpoweroff&" << std::endl;
+    }
     exit(0);
 }
 
 void action_logout(Fl_Widget *, void * ) {
-    system("killall X&");
-    system("killall Xorg.bin&");
-    system("killall labwc&");
-    system("killall sway&");
-    system("killall weston&");
+    int result;
+    result = std::system("killall X&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "killall X&" << std::endl;
+    }    
+    result = std::system("killall Xorg.bin&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "killall Xorg.bin&" << std::endl;
+    }
+    result = std::system("killall labwc&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "killall labwc&" << std::endl;
+    }
+    result = std::system("killall sway&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "killall sway&" << std::endl;
+    }
+    result = std::system("killall weston&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "killall weston&" << std::endl;
+    }
     exit(0);
 }
 
 void action_suspend(Fl_Widget *, void * ) {
-    system("pm-suspend&");
+    int result = std::system("pm-suspend&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "pm-suspend&" << std::endl;
+    }
     exit(0);
 }
 
 void action_reboot(Fl_Widget *, void * ) {
-    system("wmreboot&");
+    int result = std::system("wmreboot&");
+    if (result == -1) {
+        std::cerr << "Failed to execute command: " << "wmreboot&" << std::endl;
+    }
     exit(0);
 }
 
