@@ -2,7 +2,7 @@
  *  License: GPL v3
  */
 
-//g++ `fltk-config --cxxflags` wmlogout.cxx `fltk-config --ldflags` -o wmlogout; ./wmlogout
+//g++ `fltk-config --cxxflags` main.cpp `fltk-config --ldflags` -o wmlogout; ./wmlogout
 
 #include <FL/Fl.H>
 #include <FL/Fl_Double_Window.H>
