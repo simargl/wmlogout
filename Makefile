@@ -8,10 +8,10 @@ FLTK_CXXFLAGS := $(shell fltk-config --cxxflags)
 FLTK_LDFLAGS := $(shell fltk-config --ldflags)
 
 # Source files
-SOURCES := wmlogout.cxx
+SOURCES := wmlogout.cpp
 
 # Object files
-OBJECTS := $(SOURCES:.cxx=.o)
+OBJECTS := $(SOURCES:.cpp=.o)
 
 # Executable
 EXECUTABLE := wmlogout
