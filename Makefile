@@ -8,7 +8,7 @@ FLTK_CXXFLAGS := $(shell fltk-config --cxxflags)
 FLTK_LDFLAGS := $(shell fltk-config --ldflags)
 
 # Source files
-SOURCES := wmlogout.cpp
+SOURCES := main.cpp
 
 # Object files
 OBJECTS := $(SOURCES:.cpp=.o)
