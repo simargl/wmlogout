@@ -39,10 +39,7 @@ void action_poweroff(Fl_Widget*, void*) {
 }
 
 void action_logout(Fl_Widget*, void*) {
-    const char* commands[] = {"killall X&", "killall Xorg.bin&", "killall labwc&", "killall sway&", "killall weston&"};
-    for (const auto& cmd : commands) {
-        executeCommand(cmd);
-    }
+    executeCommand("killall X & killall Xorg & killall Xorg.bin & killall labwc & killall sway & killall weston &");
 }
 
 void action_suspend(Fl_Widget*, void*) {
