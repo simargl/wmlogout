@@ -55,7 +55,11 @@ void action_quit(Fl_Widget*, void*) {
 }
 
 int main(int argc, char** argv) {
-    Fl_Double_Window* main_window = new Fl_Double_Window(560, 60, "WM Logout");
+    int screenWidth = Fl::w();
+    int screenHeight = Fl::h();
+    int windowWidth = 560;
+    int windowHeight = 60;
+    Fl_Double_Window* main_window = new Fl_Double_Window((screenWidth - windowWidth) / 2, (screenHeight - windowHeight) / 2, windowWidth, windowHeight, "WM Logout");
     main_window->color(bcolor);
     Fl_Group* group = new Fl_Group(10, 10, 540, 40);
     group->selection_color((Fl_Color)41);
