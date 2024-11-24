@@ -11,7 +11,7 @@
 #include <iostream>
 
 Fl_Color bcolor = 0x2d2d2d00;
-Fl_Color fcolor = 0x15539e00;
+Fl_Color fcolor = 0x6b6b6b00;
 
 class Fl_HoverButton: public Fl_Button {
 public:
