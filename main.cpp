@@ -10,8 +10,8 @@
 #include <cstdlib>
 #include <iostream>
 
-Fl_Color bcolor = 0x2d2d2d00;
-Fl_Color fcolor = 0x6b6b6b00;
+Fl_Color bcolor = 0x15161700;
+Fl_Color fcolor = 0x2d2d2d00;
 
 class Fl_HoverButton: public Fl_Button {
 public:
